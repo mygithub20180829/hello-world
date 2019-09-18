@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		  package="com.liuwang.myok">
+	
+	<!-- 网络权限 -->
+	<uses-permission android:name="android.permission.INTERNET"/>
+	
+	<!-- 外部存储的权限 -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	
+	<application
+			android:allowBackup="true"
+			android:icon="@mipmap/ic_launcher"
+			android:label="@string/app_name"
+			android:roundIcon="@mipmap/ic_launcher_round"
+			android:supportsRtl="true"
+			android:theme="@style/AppTheme">
+		<activity android:name=".MainActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity android:name=".OKHttpActivity">
+		</activity>
+		<activity android:name=".OKHttpListActivity">
+		</activity>
+		<activity android:name=".NativeJsonPraseActivity">
+		</activity>
+		<activity android:name=".GSONActivity">
+		</activity>
+		<activity android:name=".FastJsonActivity">
+		</activity>
+		<activity android:name=".HelloChart">
+		</activity>
+	</application>
+
+</manifest>
